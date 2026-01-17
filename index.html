@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Levi Launcher – MCPE Client</title>
+<style>
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: linear-gradient(135deg, #001f00, #003300);
+  color: #e0f7e0;
+  overflow-x: hidden;
+}
+
+/* Glass Panels */
+.glass {
+  background: rgba(0, 50, 0, 0.4);
+  backdrop-filter: blur(10px);
+  border-radius: 15px;
+  padding: 30px;
+  margin: 20px 0;
+  box-shadow: 0 0 20px rgba(0,255,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.glass:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0,255,0,0.5);
+}
+
+/* Header */
+header {
+  padding: 80px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #004400, #002200);
+  position: relative;
+  overflow: hidden;
+}
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 15px #00ff44;
+}
+header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* Floating bubbles (liquid effect) */
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(0,255,68,0.15);
+  animation: float 10s linear infinite;
+}
+@keyframes float {
+  0% { transform: translateY(100vh) scale(0.5); }
+  100% { transform: translateY(-20vh) scale(1); }
+}
+
+/* Section Headings */
+h2 {
+  color: #00ff44;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 1s forwards;
+}
+@keyframes fadeUp {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Features Grid */
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+/* Download Button */
+.btn {
+  display: inline-block;
+  padding: 15px 35px;
+  background: rgba(0,255,68,0.2);
+  border: 2px solid #00ff44;
+  color: #00ff44;
+  font-weight: bold;
+  border-radius: 30px;
+  text-decoration: none;
+  box-shadow: 0 0 15px rgba(0,255,68,0.3);
+  transition: all 0.3s;
+}
+.btn:hover {
+  background: rgba(0,255,68,0.4);
+  box-shadow: 0 0 25px #00ff44;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  opacity: 0.7;
+}
+
+/* Animations on scroll */
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate {
+  opacity: 0;
+  animation: slideUp 1s forwards;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Levi Launcher</h1>
+  <p>The Ultimate MCPE Client Experience</p>
+  <!-- Liquid bubbles -->
+  <div class="bubble" style="width:60px; height:60px; left:10%; animation-duration:12s;"></div>
+  <div class="bubble" style="width:40px; height:40px; left:70%; animation-duration:8s;"></div>
+  <div class="bubble" style="width:80px; height:80px; left:40%; animation-duration:15s;"></div>
+</header>
+
+<section>
+  <h2>🚀 About Levi Launcher</h2>
+  <div class="glass animate">
+    Levi Launcher is the most powerful MCPE client with FPS boost, smooth UI, and advanced features for casual and competitive players alike.
+  </div>
+</section>
+
+<section>
+  <h2>🔥 Features</h2>
+  <div class="features">
+    <div class="glass animate">⚡ FPS Boost & Performance Optimization</div>
+    <div class="glass animate">🎯 Advanced PvP Enhancements</div>
+    <div class="glass animate">🎨 Custom UI & Themes</div>
+    <div class="glass animate">🛡️ Anti-lag & Stability</div>
+    <div class="glass animate">📱 Fully Optimized for MCPE</div>
+    <div class="glass animate">🔒 Safe & Lightweight</div>
+  </div>
+</section>
+
+<section class="glass" style="text-align:center;">
+  <h2>⬇️ Download</h2>
+  <a href="#" class="btn">Download Levi Launcher</a>
+  <p style="margin-top:10px; font-size:0.9rem; opacity:0.7;">
+    *Replace download link with official source*
+  </p>
+</section>
+
+<footer>
+  © 2026 Levi Launcher • Fan-made Website
+</footer>
+
+</body>
+</html>
